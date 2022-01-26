@@ -25,22 +25,6 @@ function [powerterms_MR,powerterms_RZF,powerterms_MMMSE] = functionComputeULPowe
 %                   the fourth term is the total interference from all UEs
 %powerterms_RZF   = Same as powerterms_MR but with RZF combining
 %powerterms_MMMSE = Same as powerterms_MR but with M-MMSE combining
-%
-%
-%This Matlab function was developed to generate simulation results to:
-%
-%Emil Bjornson, Jakob Hoydis and Luca Sanguinetti (2017), 
-%"Massive MIMO Networks: Spectral, Energy, and Hardware Efficiency", 
-%Foundations and Trends in Signal Processing: Vol. 11, No. 3-4, 
-%pp. 154-655. DOI: 10.1561/2000000093.
-%
-%For further information, visit: https://www.massivemimobook.com
-%
-%This is version 1.0 (Last edited: 2017-11-04)
-%
-%License: This code is licensed under the GPLv2 license. If you in any way
-%use this code for research that results in publications, please cite our
-%monograph as described above.
 
 
 %Store identity matrices of different sizes

@@ -1,5 +1,3 @@
-%This Matlab script can be used to reproduce Figure 5.12 in the monograph:
-%
 %Empty workspace and close figures
 close all;
 clear;

@@ -24,23 +24,6 @@ function [P_MR,P_RZF,P_MMMSE,P_ZF,P_SMMSE] = functionCPcomputation(Mrange,K,L,B,
 %P_MMMSE = Same as P_MMMSE but with M-MMSE processing
 %P_ZF    = Same as P_ZF but with XF processing
 %P_SMMSE = Same as P_SMMSE but with S-MMSE processing
-%
-%
-%This Matlab function was developed to generate simulation results to:
-%
-%Emil Bjornson, Jakob Hoydis and Luca Sanguinetti (2017), 
-%"Massive MIMO Networks: Spectral, Energy, and Hardware Efficiency", 
-%Foundations and Trends in Signal Processing: Vol. 11, No. 3-4, 
-%pp. 154-655. DOI: 10.1561/2000000093.
-%
-%For further information, visit: https://www.massivemimobook.com
-%
-%This is version 1.0 (Last edited: 2017-11-04)
-%
-%License: This code is licensed under the GPLv2 license. If you in any way
-%use this code for research that results in publications, please cite our
-%monograph as described above.
-
 
 %Obtain CP model coefficients for one of the value sets in Table 5.3
 [P_FIX,P_LO,P_BS,P_UE,P_COD,P_DEC,L_BS,P_BT] = functionCPmodel(valueset);
