@@ -1,40 +1,4 @@
 function SE = functionPowerOptimization_maxmin(signal,interference,Pmax,prelogFactor)
-%Compute DL power allocation that solves the max-min fairness problem,
-%using the algorithm in Theorem 7.1.
-%
-%This function require additional software packages to be used, which
-%need to be downloaded and installed separately. These packages are
-%developed independently and are delivered with separate licenses.
-%The implementation uses CVX (http://cvxr.com/cvx) and has been tested
-%using CVX version 2.1. We recommend the use of the Mosek solver (we
-%have tested using version 7.1.0.12).
-%
-%INPUT:
-%signal       = K x L matrix where element (k,j) is a_jk in (7.2)
-%interference = K x L x K x L matrix where (l,i,j,k) is b_lijk in (7.3)
-%Pmax         = Maximum transmit power per BS
-%prelogFactor = Prelog factor
-%
-%OUTPUT:
-%SE = K x L matrix where element (k,j) is the downlink SE of UE k in cell j
-%     using the max-min power allocation solution
-%
-%
-%This Matlab function was developed to generate simulation results to:
-%
-%Emil Bjornson, Jakob Hoydis and Luca Sanguinetti (2017), 
-%"Massive MIMO Networks: Spectral, Energy, and Hardware Efficiency", 
-%Foundations and Trends in Signal Processing: Vol. 11, No. 3-4, 
-%pp. 154-655. DOI: 10.1561/2000000093.
-%
-%For further information, visit: https://www.massivemimobook.com
-%
-%This is version 1.01 (Last edited: 2019-03-16)
-%
-%License: This code is licensed under the GPLv2 license. If you in any way
-%use this code for research that results in publications, please cite our
-%monograph as described above.
-
 
 %Extract number of UEs
 K = size(signal,1);

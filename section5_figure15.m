@@ -44,8 +44,9 @@ EE_MMMSE = zeros(length(Mrange),length(Krange));
 
 
 %% Go through all number of BS antennas
+
 for m = 1:length(Mrange)
-    
+    count = 0;
     %Go through all number of UEs
     for k = 1:length(Krange)
         
@@ -70,10 +71,11 @@ for m = 1:length(Mrange)
         
     end
 end
+%Efficiency 
 
-P_total_MMMSE = ETP_total + P_MMMSE
-P_total_RZF = ETP_total + P_RZF
-P_total_MR = ETP_total + P_MR
+P_total_MMMSE = ETP_total + P_MMMSE;
+P_total_RZF = ETP_total + P_RZF;
+P_total_MR = ETP_total + P_MR;
 
 %% Plot simulation results
 

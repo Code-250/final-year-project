@@ -1,47 +1,4 @@
 function [H,Rest,activeUEs] = functionExampleSetup_Quadriga(L,Kdrop,B,noiseVariancedBm,Kmax,f,M,polarizations)
-%This function generates the channel realizations between UEs at random
-%locations and the BSs in the running example, defined in Section 4.1.3.
-%BSs with cylindrical arrays and channel are generated using QuaDRiGa from
-%the Fraunhofer Heinrich Hertz Institute. The Urban Microcell NLOS scenario
-%is used for channel modeling. QuaDRiGa needs to be installed separately
-%(http://www.quadriga-channel-model.de) and is delivered with a separate
-%license. This function has been tested using QuaDRiGa version 1.4.8-571.
-%
-%INPUT:
-%L                = Number of BSs and cells
-%Kdrop            = Number of UEs to be dropped in the square around a BS
-%B                = Bandwidth in Hz
-%noiseVariancedBm = Noise variance in dBm
-%Kmax             = Maximum number of UEs served by a BS
-%f                = Pilot reuse factor, giving pilot length Kmax*f
-%M                = Number of BS antennas
-%polarizations    = Select number of antenna polarizations (1 or 2)
-%
-%OUTPUT:
-%H         = M x 400 x K x L x L matrix with the channel realizations over
-%            400 subcarriers at one time instance
-%Rest      = M x M x K x L x L matrix with estimates of the spatial
-%            correlation matrices for all UEs in the network.
-%            Rest(:,:,k,j,l) is the correlation matrix for the channel
-%            between UE k in cell j and the BS in cell l.
-%activeUEs = Kmax x L with zeros and ones. activeUEs(k,l)==1 means that
-%            pilot k is used by a UE in cell l
-%
-%
-%This Matlab function was developed to generate simulation results to:
-%
-%Emil Bjornson, Jakob Hoydis and Luca Sanguinetti (2017), 
-%"Massive MIMO Networks: Spectral, Energy, and Hardware Efficiency", 
-%Foundations and Trends in Signal Processing: Vol. 11, No. 3-4, 
-%pp. 154-655. DOI: 10.1561/2000000093.
-%
-%For further information, visit: https://www.massivemimobook.com
-%
-%This is version 1.0 (Last edited: 2017-11-04)
-%
-%License: This code is licensed under the GPLv2 license. If you in any way
-%use this code for research that results in publications, please cite our
-%monograph as described above.
 
 
 %% Create new Quadriga layout

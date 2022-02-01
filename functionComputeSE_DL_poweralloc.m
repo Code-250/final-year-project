@@ -12,23 +12,6 @@ function SE = functionComputeSE_DL_poweralloc(rho,signal,interference,prelogFact
 %OUTPUT:
 %SE = K x L matrix where element (k,j) is the downlink SE of UE k in cell j
 %     using the power allocation given as input
-%
-%
-%This Matlab function was developed to generate simulation results to:
-%
-%Emil Bjornson, Jakob Hoydis and Luca Sanguinetti (2017), 
-%"Massive MIMO Networks: Spectral, Energy, and Hardware Efficiency", 
-%Foundations and Trends in Signal Processing: Vol. 11, No. 3-4, 
-%pp. 154-655. DOI: 10.1561/2000000093.
-%
-%For further information, visit: https://www.massivemimobook.com
-%
-%This is version 1.0 (Last edited: 2017-11-04)
-%
-%License: This code is licensed under the GPLv2 license. If you in any way
-%use this code for research that results in publications, please cite our
-%monograph as described above.
-
 
 %Extract number of UEs
 K = size(signal,1);

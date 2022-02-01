@@ -27,23 +27,6 @@ function [SE_MR,SE_RZF,SE_MMMSE,SE_ZF,SE_SMMSE] = functionComputeSE_DL_estimatio
 %SE_MMMSE = Same as SE_MR but with M-MMSE precoding
 %SE_ZF    = Same as SE_MR but with ZF precoding
 %SE_SMMSE = Same as SE_MR but with S-MMSE precoding
-%
-%
-%This Matlab function was developed to generate simulation results to:
-%
-%Emil Bjornson, Jakob Hoydis and Luca Sanguinetti (2017), 
-%"Massive MIMO Networks: Spectral, Energy, and Hardware Efficiency", 
-%Foundations and Trends in Signal Processing: Vol. 11, No. 3-4, 
-%pp. 154-655. DOI: 10.1561/2000000093.
-%
-%For further information, visit: https://www.massivemimobook.com
-%
-%This is version 1.01 (Last edited: 2020-05-15)
-%
-%License: This code is licensed under the GPLv2 license. If you in any way
-%use this code for research that results in publications, please cite our
-%monograph as described above.
-
 
 %Store identity matrices of different sizes
 eyeK = eye(K);

@@ -25,23 +25,6 @@ function [SE_MR,SE_MR_asymptotic] = functionComputeSE_DL_MR_impairments(channelG
 %                   UE k in cell l achieved with MR precoding
 %SE_MR_asymptotic = K x L matrix where element (k,l) is the asymptotic
 %                   downlink SE of UE k in cell l achieved with MR precoding
-%
-%
-%This Matlab function was developed to generate simulation results to:
-%
-%Emil Bjornson, Jakob Hoydis and Luca Sanguinetti (2017), 
-%"Massive MIMO Networks: Spectral, Energy, and Hardware Efficiency", 
-%Foundations and Trends in Signal Processing: Vol. 11, No. 3-4, 
-%pp. 154-655. DOI: 10.1561/2000000093.
-%
-%For further information, visit: https://www.massivemimobook.com
-%
-%This is version 1.0 (Last edited: 2017-11-04)
-%
-%License: This code is licensed under the GPLv2 license. If you in any way
-%use this code for research that results in publications, please cite our
-%monograph as described above.
-
 
 %Initiate the hardware qualities as perfect if these are not given as input
 if nargin<9
